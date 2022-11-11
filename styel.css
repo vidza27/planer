@@ -1,0 +1,60 @@
+*{box-sizing: border-box;}
+body{
+    background-color: yellowgreen;
+    color: crimson;
+    font-family: "Lucida Console", "Courier New", monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+h1{
+    color: rgb(0, 225, 220);
+    font-size: 96px;
+    opacity: 400px;
+}
+#container{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+.input{
+    border: none;
+    color: darkcyan;
+    font-size: 32px;
+    padding: 16px 32px;
+    width: 400px;
+}
+.input::placeholder{
+    color: indigo;
+}
+.input:focus{
+    outline-color: rgb(0, 90, 100);
+}
+h1:hover{
+    margin: 5px;
+    background-color: whitesmoke;
+}
+.todos{
+    padding: 0;
+    margin: 0;
+    list-style-type: none ;
+}
+.todos li{
+    border-top: 1px solid darkblue;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 16px 32px;
+}
+.todos li:hover{
+    cursor: pointer;
+}
+.todos li.complited{
+    color: darkolivegreen;
+    text-decoration: line-through;
+}
+small{
+    color: deepskyblue;
+    margin-top: 64px;
+}
